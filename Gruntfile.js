@@ -33,6 +33,18 @@ module.exports = function (grunt) {
             }
         },
 
+        jsdoc: {
+            dist: {
+                src: ['lib/**/*.js', 'app/**/*.js'],
+                options: {
+                    tutorials: 'tutorials',
+                    destination: 'doc',
+                    template: 'node_modules/ink-docstrap/template',
+                    configure: 'node_modules/ink-docstrap/template/jsdoc.conf.json'
+                }
+            }
+        },
+
         watch: {
             all: {
                 files: ['app/**/*.js', 'lib/**/*.js', 'test/**/*.js', 'config/*.js'],
@@ -104,6 +116,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-buster');
     grunt.loadNpmTasks("grunt-jscs");
     grunt.loadNpmTasks('grunt-coveralls');
+    grunt.loadNpmTasks("grunt-jsdoc");
 
     // Default task.
     grunt.registerTask( "lint", [ "jshint", "jscs" ] );
@@ -111,7 +124,8 @@ module.exports = function (grunt) {
     grunt.registerTask('test', 'buster:unit');
     grunt.registerTask('check', ['watch']);
     grunt.registerTask('run', ['buster:unit', 'nodemon:dev']);
-    grunt.registerTask('artifact', ['shell', 'coveralls:real_coverage']);
+    grunt.registerTask('artifact', ['shell', 'coveralls:real_coverage', 'jsdoc']);
+    grunt.registerTask('doc', ['jsdoc']);
     grunt.registerTask('report', ['coveralls:real_coverage']);
 
 };
