@@ -9,7 +9,6 @@
 var path = require('path'),
     appPath = path.normalize(__dirname + '/../');
 
-var App = require(appPath + 'lib/my-app');
-var app = new App();
+var app = require(appPath + 'lib/geo-lib');
 
 module.exports = app;
