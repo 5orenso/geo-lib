@@ -31,6 +31,20 @@ let result = geoLib.distance({
 // }
 ```
 
+Or even in a simpler way:
+```javascript
+let geoLib = require('geo-lib');
+let result = geoLib.distance([
+    [70.3369224, 30.3411273],
+    [59.8939528, 10.6450348]
+]);
+// result = {
+//   distance: 1468.28,
+//   unit: 'km',
+//   method: 'haversine'
+// }
+```
+
 To find the distance and speed between 2 geo points:
 ```javascript
 let geoLib = require('geo-lib');
@@ -48,6 +62,27 @@ let result = geoLib.distance({
 //   timeUsedInSeconds: 432000,
 //   unit: 'km'
 // }
+```
+
+To check if a point is inside a polygon:
+```javascript
+let geoLib = require('geo-lib');
+let result = geoLib.pointIsInsidePoly([
+    [70.403203, 31.055603],
+    [70.364476, 31.089935],
+    [70.361707, 31.107788],
+    [70.363091, 31.132507],
+    [70.367244, 31.140747],
+    [70.375087, 31.154480],
+    [70.379699, 31.172333],
+    [70.387536, 31.179199],
+    [70.397214, 31.164093],
+    [70.403203, 31.129761],
+    [70.405506, 31.100922],
+    [70.405506, 31.062469],
+    [70.403663, 31.056976]
+], [70.374164, 31.117401]);
+// result = true                               
 ```
 
 
