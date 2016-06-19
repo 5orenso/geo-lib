@@ -1,28 +1,74 @@
-# Boilerplate for your brand new Node.js module - NPM ready
+# Geo-lib module for fast calculations of distance, speed and heading
 
 [![Build Status](https://travis-ci.org/5orenso/geo-lib.svg?branch=master)](https://travis-ci.org/5orenso/geo-lib)
 [![Coverage Status](https://coveralls.io/repos/github/5orenso/geo-lib/badge.svg?branch=master)](https://coveralls.io/github/5orenso/geo-lib?branch=master)
 
-Placeholder for my new geo-lib module. This is going to be a useful Node.js module built with performance and speed as 
-priority one.
+The start of my new geo-lib module. This Node.js module is built with performance and speed as priority one. 
+
+Why did I start this module?
+I need a module that is able to do millions of calculations every minute. This module is going to be developed
+according to these demands. I'll always be looking out for de-optimization inside the V8 engine.
 
 
-### Howto to get started
+### Howto get started using this module
 ```bash
-git clone git@github.com:5orenso/geo-lib.git
-cd geo-lib/
-npm install
+$ npm install geo-lib --save
+```
+
+Then use it in your code.
+
+To find the distance between 2 geo points:
+```javascript
+let geoLib = require('geo-lib');
+let result = geoLib.distance({
+    p1: { lat: 70.3369224, lon: 30.3411273 },
+    p2: { lat: 59.8939528, lon: 10.6450348 }
+});
+// result = {
+//   distance: 1468.28,
+//   unit: 'km',
+//   method: 'haversine'
+// }
+```
+
+To find the distance and speed between 2 geo points:
+```javascript
+let geoLib = require('geo-lib');
+let result = geoLib.distance({
+    p1: { lat: 70.3369224, lon: 30.3411273 },
+    p2: { lat: 59.8939528, lon: 10.6450348 },
+    timeUsed: 86400 * 5
+});
+// result = {
+//   distance: 1468.28,
+//   method: 'haversine',
+//   speedKph: 12.24,
+//   speedMph: 7.61,
+//   speedMpk: '5:54',
+//   timeUsedInSeconds: 432000,
+//   unit: 'km'
+// }
+```
+
+
+----------
+
+### Howto to get started with contributions
+```bash
+$ git clone git@github.com:5orenso/geo-lib.git
+$ cd geo-lib/
+$ npm install
 ```
 
 Start developing. Remember to start watching your files:
 ```bash 
-grunt watch
+$ grunt watch
 ```
 
 ### Howto contribute
 
 ```bash
-git clone git@github.com:5orenso/geo-lib.git
+$ git clone git@github.com:5orenso/geo-lib.git
 ```
 Do your magic and create a pull request.
 
