@@ -21,13 +21,14 @@ buster.testCase('lib/my-app', {
         'exposed run function w/options': () => {
             let app = require(appPath + 'app/app');
             let result = app.distance({
-                lat1: 70.3369224, lon1: 30.3411273,
-                lat2: 59.8939528, lon2: 10.6450348,
+                p1: { lat: 70.3369224, lon: 30.3411273 },
+                p2: { lat: 59.8939528, lon: 10.6450348 },
                 unit: 'km'
             });
             assert.equals(result, {
-                distance: 1447.35,
-                unit: 'km'
+                distance: 1468.28,
+                unit: 'km',
+                method: 'haversine'
             });
         }
 
