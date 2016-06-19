@@ -1,4 +1,11 @@
-* _2016-06-19_: Updated the main docs. (HEAD -> master, origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/a171ffc59f861201b5fb9378e5b0daea43396d37">view commit</a>
+* _2016-06-19_: Updated version. (HEAD -> master, origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/cfa79d01b02c84a29fc3dad8db462e98a164f5d3">view commit</a>
+* _2016-06-19_: Doing more testing. Also testing exception cases. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/fc1cf8f4314777e9aef445f5be1c7a49f63b68d2">view commit</a>
+* _2016-06-19_: Added more input checking. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/6addcba5556a310bbb4af54844435d4a57426093">view commit</a>
+* _2016-06-19_: Cleaned up unused stuff. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/152988c4709956c30bf6a07b9457c01d734a6336">view commit</a>
+* _2016-06-19_: Added more docs. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/7aa7d58c44f037efe0ea352f43634c60c775664c">view commit</a>
+* _2016-06-19_: Added function to check if a point is inside a polygon. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/885004070cb0a4102712c1bd0cad79f1db59090a">view commit</a>
+* _2016-06-19_: Updated changelog. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/9e7df9916cc170989d65a47a8e0cda5dad8c6b77">view commit</a>
+* _2016-06-19_: Updated the main docs. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/a171ffc59f861201b5fb9378e5b0daea43396d37">view commit</a>
 * _2016-06-19_: Added changelog. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/f1129dce007cdaf9cff99dcc8050186d6d58fa6c">view commit</a>
 * _2016-06-19_: Bumped version. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/3db04ea427e9afdd8e64822a69275d712aaf6559">view commit</a>
 * _2016-06-19_: Ok, first alpha version is ready to be tested. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/4ad0a0b9dd1416842d4d81b46db10a266e05e1d5">view commit</a>
