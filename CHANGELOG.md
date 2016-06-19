@@ -1,0 +1,9 @@
+* _2016-06-19_: Ok, first alpha version is ready to be tested. (HEAD -> master, origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/4ad0a0b9dd1416842d4d81b46db10a266e05e1d5">view commit</a>
+* _2016-06-18_: Adding placeholders. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/68f8917a32afea209189526e09900604556067b8">view commit</a>
+* _2016-06-18_: Changed ref. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/190ec5108fa762c865c05973eee8d1c0fa952903">view commit</a>
+* _2016-06-18_: Added JSDoc. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/f651e394fee37dd9315eae09446606450b9ce640">view commit</a>
+* _2016-06-18_: Added the first real test. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/5555e0610c9e906a37d15b8548d08383a4638c0b">view commit</a>
+* _2016-06-18_: Added the first real test. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/53db975256f4b03cd9166c6ebd26b2a8c3bc3f2e">view commit</a>
+* _2016-06-18_: Ignoring JSDocs. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/8a657346694f3c8eb306f62474ae24760796bd16">view commit</a>
+* _2016-06-18_: Just to make Travis build the first build. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/2ee0a22e7f6d8d0592f860cc7b4a641918f4454b">view commit</a>
+* _2016-06-18_: Initial commit of module base. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/3666c482e5403f0d4523d93ac48668607b560ad6">view commit</a>
