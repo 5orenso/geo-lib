@@ -1,4 +1,7 @@
-* _2016-06-19_: Ok, first alpha version is ready to be tested. (HEAD -> master, origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/4ad0a0b9dd1416842d4d81b46db10a266e05e1d5">view commit</a>
+* _2016-06-19_: Updated the main docs. (HEAD -> master, origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/a171ffc59f861201b5fb9378e5b0daea43396d37">view commit</a>
+* _2016-06-19_: Added changelog. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/f1129dce007cdaf9cff99dcc8050186d6d58fa6c">view commit</a>
+* _2016-06-19_: Bumped version. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/3db04ea427e9afdd8e64822a69275d712aaf6559">view commit</a>
+* _2016-06-19_: Ok, first alpha version is ready to be tested. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/4ad0a0b9dd1416842d4d81b46db10a266e05e1d5">view commit</a>
 * _2016-06-18_: Adding placeholders. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/68f8917a32afea209189526e09900604556067b8">view commit</a>
 * _2016-06-18_: Changed ref. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/190ec5108fa762c865c05973eee8d1c0fa952903">view commit</a>
 * _2016-06-18_: Added JSDoc. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/f651e394fee37dd9315eae09446606450b9ce640">view commit</a>
