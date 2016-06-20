@@ -96,7 +96,7 @@ buster.testCase('lib/geo-lib', {
                 method: 'haversine',
                 speedKph: 12.24,
                 speedMph: 7.61,
-                speedMpk: '5:54',
+                speedMpk: '4:54',
                 timeUsedInSeconds: 432000,
                 unit: 'km'
             });
