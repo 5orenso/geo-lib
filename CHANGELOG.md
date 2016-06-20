@@ -1,4 +1,7 @@
-* _2016-06-19_: Updated version. (HEAD -> master, origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/cfa79d01b02c84a29fc3dad8db462e98a164f5d3">view commit</a>
+* _2016-06-20_: Bumped version. (HEAD -> master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/269735c0649876c4adf602afb4e8cf6cf6d303dc">view commit</a>
+* _2016-06-20_: Fixed Issue #1. Speed bug. (origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/d9f92e5bb92a4530e4a716c74cbfa4426f9c8545">view commit</a>
+* _2016-06-19_: Updated changelog. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/be8ef562098db51852cb98daca154c1fc2dd3fec">view commit</a>
+* _2016-06-19_: Updated version. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/cfa79d01b02c84a29fc3dad8db462e98a164f5d3">view commit</a>
 * _2016-06-19_: Doing more testing. Also testing exception cases. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/fc1cf8f4314777e9aef445f5be1c7a49f63b68d2">view commit</a>
 * _2016-06-19_: Added more input checking. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/6addcba5556a310bbb4af54844435d4a57426093">view commit</a>
 * _2016-06-19_: Cleaned up unused stuff. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/152988c4709956c30bf6a07b9457c01d734a6336">view commit</a>
