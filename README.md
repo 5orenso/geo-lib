@@ -67,7 +67,7 @@ let result = geoLib.distance({
 To check if a point is inside a polygon:
 ```javascript
 let geoLib = require('geo-lib');
-let result = geoLib.pointIsInsidePoly([
+let result = geoLib.pointInsidePolygon([
     [70.403203, 31.055603],
     [70.364476, 31.089935],
     [70.361707, 31.107788],
@@ -82,6 +82,31 @@ let result = geoLib.pointIsInsidePoly([
     [70.405506, 31.062469],
     [70.403663, 31.056976]
 ], [70.374164, 31.117401]);
+// result = true                               
+```
+
+To check if 2 lines intersects:
+```javascript
+let geoLib = require('geo-lib');
+let result = geoLib.linesIntersect(
+    {lat: 59.75639, lon: 6.67968}, {lat: 61.15383, lon: 11.87622},
+    {lat: 61.51745, lon: 8.15185}, {lat: 59.75086, lon: 11.1621}
+);
+// result = true                               
+```
+
+To check if 2 polygons overlaps:
+```javascript
+let geoLib = require('geo-lib');
+let result = geoLib.polygonOverlapsPolygon([
+        60.21799, 10.40405,
+        59.36119, 8.80004,
+        59.21531, 11.39282
+    ], [
+        59.86136, 11.52465,
+        59.02924, 10.51391,
+        59.0688, 12.63427
+    ]);
 // result = true                               
 ```
 
