@@ -1,5 +1,8 @@
-* _2016-06-20_: Bumped version. (HEAD -> master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/269735c0649876c4adf602afb4e8cf6cf6d303dc">view commit</a>
-* _2016-06-20_: Fixed Issue #1. Speed bug. (origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/d9f92e5bb92a4530e4a716c74cbfa4426f9c8545">view commit</a>
+* _2016-06-24_: Updated docs. (HEAD -> master, origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/01e573a6fe67b38d29e8d5d2f4d5a63b340c6990">view commit</a>
+* _2016-06-24_: Added polygon overlaps support. It's now possible to check if 2 polygons overlaps, 2 lines intersects or if a point is inside a polygon. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/12625448cfae75f3f73be1bc0096f56d379d7277">view commit</a>
+* _2016-06-20_: Updated changelog. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/e63e1bf8ee45d3fd83abe40f82cf22710587e11a">view commit</a>
+* _2016-06-20_: Bumped version. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/269735c0649876c4adf602afb4e8cf6cf6d303dc">view commit</a>
+* _2016-06-20_: Fixed Issue #1. Speed bug. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/d9f92e5bb92a4530e4a716c74cbfa4426f9c8545">view commit</a>
 * _2016-06-19_: Updated changelog. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/be8ef562098db51852cb98daca154c1fc2dd3fec">view commit</a>
 * _2016-06-19_: Updated version. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/cfa79d01b02c84a29fc3dad8db462e98a164f5d3">view commit</a>
 * _2016-06-19_: Doing more testing. Also testing exception cases. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/fc1cf8f4314777e9aef445f5be1c7a49f63b68d2">view commit</a>
