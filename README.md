@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/5orenso/geo-lib.svg?branch=master)](https://travis-ci.org/5orenso/geo-lib)
 [![Coverage Status](https://coveralls.io/repos/github/5orenso/geo-lib/badge.svg?branch=master)](https://coveralls.io/github/5orenso/geo-lib?branch=master)
+[![npm version](https://badge.fury.io/js/geo-lib.svg)](https://badge.fury.io/js/geo-lib)
 
 The start of my new geo-lib module. This Node.js module is built with performance and speed as priority one. 
 
