@@ -5,12 +5,16 @@
 [![GitHub version](https://badge.fury.io/gh/5orenso%2Fgeo-lib.svg)](https://badge.fury.io/gh/5orenso%2Fgeo-lib)
 [![npm version](https://badge.fury.io/js/geo-lib.svg)](https://badge.fury.io/js/geo-lib)
 
-The start of my new geo-lib module. This Node.js module is built with performance and speed as priority one. 
+[![NPM Stats](https://nodei.co/npm/geo-lib.png?downloads=true&downloadRank=true)](https://npmjs.org/packages/geo-lib/)
+
+
+The start of my new geo-lib module. This Node.js module is built with performance and speed as priority one.
 
 Why did I start this module?
 I need a module that is able to do millions of calculations every minute. This module is going to be developed
 according to these demands. I'll always be looking out for de-optimization inside the V8 engine.
 
+If you don't follow instructions you will end up in [Null Island](http://www.wsj.com/articles/if-you-cant-follow-directions-youll-end-up-on-null-island-1468422251)
 
 ### Howto get started using this module
 ```bash
@@ -123,7 +127,7 @@ $ npm install
 ```
 
 Start developing. Remember to start watching your files:
-```bash 
+```bash
 $ grunt watch
 ```
 
