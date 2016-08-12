@@ -73,7 +73,7 @@ let result = geoLib.distance({
 To check if a point is inside a polygon:
 ```javascript
 let geoLib = require('geo-lib');
-let result = geoLib.pointInsidePolygon([
+let result = geoLib.pointInsidePolygon([70.374164, 31.117401], [
     [70.403203, 31.055603],
     [70.364476, 31.089935],
     [70.361707, 31.107788],
@@ -87,7 +87,7 @@ let result = geoLib.pointInsidePolygon([
     [70.405506, 31.100922],
     [70.405506, 31.062469],
     [70.403663, 31.056976]
-], [70.374164, 31.117401]);
+]);
 // result = true                               
 ```
 
