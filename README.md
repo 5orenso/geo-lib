@@ -148,13 +148,27 @@ Use the [Issue tracker](https://github.com/5orenso/geo-lib/issues)
 $ bash ./changelog.sh
 ```
 
+### Howto update NPM module
+
+1. Bump version inside `package.json`
+2. Push all changes to Github.
+3. Push all changes to npmjs.com: `$ bash ./npm-release.sh`.
+
+### Howto check for vulnerabilities in modules
+```bash
+# Install Node Security Platform CLI
+$ npm install nsp --global  
+
+# From inside your project directory
+$ nsp check  
+```
+
 ### Howto upgrade modules
 ```bash
 $ npm install -g npm-check-updates
 $ ncu -u
 $ npm install --save --no-optional
 ```
-
 
 ### HOWTO upgrade dev environment
 ```bash
@@ -170,9 +184,8 @@ $ npm install grunt-jscs --save-dev
 $ npm install grunt-nodemon --save-dev
 $ npm install grunt-shell --save-dev
 $ npm install grunt-jsdoc --save-dev
-
+$ npm install grunt-retire --save-dev
 ```
-
 
 ## More about the author
 

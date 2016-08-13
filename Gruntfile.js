@@ -45,6 +45,19 @@ module.exports = function (grunt) {
             }
         },
 
+        retire: {
+            js: ['app/*.js', 'lib/*.js'], /** Which js-files to scan. **/
+            node: ['node'], /** Which node directories to scan (containing package.json). **/
+            options: {
+                verbose: true,
+                packageOnly: true,
+                jsRepository: 'https://raw.github.com/RetireJS/retire.js/master/repository/jsrepository.json',
+                nodeRepository: 'https://raw.github.com/RetireJS/retire.js/master/repository/npmrepository.json',
+                ignore: 'tutorials',
+                ignorefile: '.retireignore' /** list of files to ignore **/
+            }
+        },
+
         watch: {
             all: {
                 files: ['app/**/*.js', 'lib/**/*.js', 'test/**/*.js', 'config/*.js'],
@@ -117,10 +130,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-jscs");
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks("grunt-jsdoc");
+    grunt.loadNpmTasks('grunt-retire');
 
     // Default task.
     grunt.registerTask( "lint", [ "jshint", "jscs" ] );
-    grunt.registerTask('default', ['lint', 'buster:unit']);
+    grunt.registerTask('default', ['lint', 'buster:unit', 'retire']);
     grunt.registerTask('test', 'buster:unit');
     grunt.registerTask('check', ['watch']);
     grunt.registerTask('run', ['buster:unit', 'nodemon:dev']);
