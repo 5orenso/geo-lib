@@ -33,16 +33,17 @@
     "grunt-jscs": "^3.0.0",
     "grunt-jsdoc": "^2.1.0",
     "grunt-nodemon": "^0.4.0",
+    "grunt-retire": "^1.0.1",
     "grunt-shell": "^1.1.2",
     "ink-docstrap": "^1.2.1"
   },
   "keywords": [],
   "dependencies": {},
   "eslintConfig": {
-      "env": {
-          "browser": true,
-          "node": true,
-          "es6": true
-      }
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
   }
 }
