@@ -6,9 +6,6 @@
  */
 'use strict';
 
-var path = require('path'),
-    appPath = path.normalize(__dirname + '/../');
-
-var app = require(appPath + 'lib/geo-lib');
+var app = require('../lib/geo-lib');
 
 module.exports = app;
