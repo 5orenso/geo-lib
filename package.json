@@ -1,5 +1,5 @@
 {
-  "name": "geo-lib",
+  "name": "react-native-custom-geo-lib",
   "description": "A Node.js module with useful geo functions. Made with performance in mind.",
   "version": "0.3.1",
   "homepage": "https://github.com/5orenso/geo-lib",
