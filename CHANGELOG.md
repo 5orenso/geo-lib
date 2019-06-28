@@ -1,5 +1,9 @@
-* _2016-08-13_: Added retire.js (HEAD -> master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/2f0812bbe3a96439532a016aed74375d40ed272f">view commit</a>
-* _2016-08-12_: Fix #2: Doc updated (origin/master) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/54e9b9b92401cab0b778d66dc42a4f6dcd1bf5f0">view commit</a>
+* _2019-06-28_: Updated docs. (HEAD -> master, origin/master) [Oistein Sorensen] <a href="http://github.com/5orenso/geo-lib/commit/17b92ee54d1c383e1e7b3b3fb125798715ead918">view commit</a>
+* _2016-08-13_: Bumped version. (tag: 0.3.1) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/be186a133cea75f77e65d3071c66899cbe2a792e">view commit</a>
+* _2016-08-13_: Added missing files. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/f6823102f433e960ea0e67a00f2ed6a58059cc4c">view commit</a>
+* _2016-08-13_: Updated version (tag: 0.3.0) [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/40aa2d1eecf9071576997343254f0f93b068b503">view commit</a>
+* _2016-08-13_: Added retire.js [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/2f0812bbe3a96439532a016aed74375d40ed272f">view commit</a>
+* _2016-08-12_: Fix #2: Doc updated [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/54e9b9b92401cab0b778d66dc42a4f6dcd1bf5f0">view commit</a>
 * _2016-08-12_: Fix #2. Removed bin links. They are not used. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/2e644c8ed737df524c7827b84b988b0220c8bf13">view commit</a>
 * _2016-08-05_: Added download info. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/dcb74295c63fc8b7b25c9b40f2c6d8351efb4066">view commit</a>
 * _2016-06-27_: Added eslint config. [Øistein Sørensen] <a href="http://github.com/5orenso/geo-lib/commit/e9c4fd18dbbefd93d606449ad833355cf043e2ac">view commit</a>
