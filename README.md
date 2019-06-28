@@ -165,27 +165,32 @@ $ nsp check
 
 ### Howto upgrade modules
 ```bash
-$ npm install -g npm-check-updates
-$ ncu -u
-$ npm install --save --no-optional
+$ sudo npm install -g npm-check-updates
+$ ncu -u -a
+$ npm install --no-optional
 ```
 
-### HOWTO upgrade dev environment
-```bash
-$ npm install buster --save-dev
-$ npm install buster-istanbul --save-dev
-$ npm install grunt --save-dev
-$ npm install grunt-buster --save-dev
-$ npm install grunt-contrib-jshint --save-dev
-$ npm install grunt-contrib-nodeunit --save-dev
-$ npm install grunt-contrib-watch --save-dev
-$ npm install grunt-coveralls --save-dev
-$ npm install grunt-jscs --save-dev
-$ npm install grunt-nodemon --save-dev
-$ npm install grunt-shell --save-dev
-$ npm install grunt-jsdoc --save-dev
-$ npm install grunt-retire --save-dev
-```
+
+## Contributions and feedback:
+
+We ❤️ contributions and feedback.
+
+If you want to contribute, please check out the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+If you have any question or suggestion create an issue.
+
+Bug reports should always be done with a new issue.
+
+
+## Other Resources
+
+* [AWS Basic setup with Cloudformation](https://github.com/5orenso/aws-cloudformation-base)
+* [AWS Lambda boilerplate](https://github.com/5orenso/aws-lambda-boilerplate)
+* [Automated AWS Lambda update](https://github.com/5orenso/aws-lambda-autodeploy-lambda)
+* [AWS API Gateway setup with Cloudformation](https://github.com/5orenso/aws-cloudformation-api-gateway)
+* [AWS IoT setup with Cloudformation](https://github.com/5orenso/aws-cloudformation-iot)
+
+
 
 ## More about the author
 
