@@ -26,11 +26,11 @@ buster.testCase('lib/my-app', {
                 unit: 'km'
             });
             assert.equals(result, {
-                distance: 1468.28,
+                bearing: 218.03212341269622,
+                distance: 1468.2753298955777,
                 unit: 'km',
                 method: 'haversine'
             });
         }
-
     }
 });

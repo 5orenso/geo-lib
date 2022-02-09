@@ -25,7 +25,8 @@ buster.testCase('lib/geo-lib', {
                 p2: { lat: 59.8939528, lon: 10.6450348 }
             });
             assert.equals(result, {
-                distance: 1468.28,
+                bearing: 218.03212341269622,
+                distance: 1468.2753298955777,
                 unit: 'km',
                 method: 'haversine'
             });
@@ -38,7 +39,8 @@ buster.testCase('lib/geo-lib', {
                 [59.8939528, 10.6450348]
             ]);
             assert.equals(result, {
-                distance: 1468.28,
+                bearing: 218.03212341269622,
+                distance: 1468.2753298955777,
                 unit: 'km',
                 method: 'haversine'
             });
@@ -51,7 +53,8 @@ buster.testCase('lib/geo-lib', {
                 { lat: 59.8939528, lon: 10.6450348 }
             ]);
             assert.equals(result, {
-                distance: 1468.28,
+                bearing: 218.03212341269622,
+                distance: 1468.2753298955777,
                 unit: 'km',
                 method: 'haversine'
             });
@@ -64,7 +67,8 @@ buster.testCase('lib/geo-lib', {
                 { y: 59.8939528, x: 10.6450348 }
             ]);
             assert.equals(result, {
-                distance: 1468.28,
+                bearing: 218.03212341269622,
+                distance: 1468.2753298955777,
                 unit: 'km',
                 method: 'haversine'
             });
@@ -77,7 +81,8 @@ buster.testCase('lib/geo-lib', {
                 59.8939528, 10.6450348
             ]);
             assert.equals(result, {
-                distance: 1468.28,
+                bearing: 218.03212341269622,
+                distance: 1468.2753298955777,
                 unit: 'km',
                 method: 'haversine'
             });
@@ -91,7 +96,8 @@ buster.testCase('lib/geo-lib', {
                 method: 'vincenty'
             });
             assert.equals(result, {
-                distance: 1472.86,
+                bearing: 218.03212341269622,
+                distance: 1472.85899,
                 unit: 'km',
                 method: 'vincenty'
             });
@@ -105,11 +111,12 @@ buster.testCase('lib/geo-lib', {
                 timeUsed: 86400 * 5
             });
             assert.equals(result, {
-                distance: 1468.28,
+                bearing: 218.03212341269622,
+                distance: 1468.2753298955777,
                 method: 'haversine',
-                speedKph: 12.24,
-                speedMph: 7.61,
-                speedMpk: '4:54',
+                speedKph: 12.235627749129813,
+                speedMph: 7.602864250104541,
+                speedMpk: '4:54.22274637735927',
                 timeUsedInSeconds: 432000,
                 unit: 'km'
             });
@@ -138,6 +145,40 @@ buster.testCase('lib/geo-lib', {
             assert.exception(function() {
                 myapp.distance();
             }, 'typeError');
+        }
+    },
+
+    'Create coordinates between points': {
+        'createCoord 1 point from p1 directly north for 10 km': () => {
+            let myapp = require(appPath + 'lib/geo-lib');
+            let result = myapp.createCoord([70.000, 30.000], 360, 10000);
+            assert.equals(result, [70.08993216059186, 29.999999999999964]);
+        },
+        'generatePoints points between p1 and p2': () => {
+            let myapp = require(appPath + 'lib/geo-lib');
+            let result = myapp.generatePoints([70.000, 30.000], [70.010, 30.010]);
+            assert.equals(result, [
+                [70.00085094723158, 30.000850779931362],
+                [70.00170189040277, 30.001701629300936],
+                [70.002552829513, 30.00255254811713],
+                [70.00340376456182, 30.0034035363886],
+                [70.00425469554865, 30.004254594123793],
+                [70.00510562247304, 30.00510572133135],
+                [70.00595654533441, 30.005956918019837],
+                [70.00680746413225, 30.006808184197695],
+                [70.00765837886604, 30.00765951987357],
+                [70.00850928953531, 30.00851092505601],
+                [70.00936019613945, 30.009362399753574]
+            ]);
+        },
+        'generatePoints points between p1 and p2 with distance 300 meters': () => {
+            let myapp = require(appPath + 'lib/geo-lib');
+            let result = myapp.generatePoints([70.000, 30.000], [70.010, 30.010], 300);
+            assert.equals(result, [
+                [70.002552829513, 30.00255254811713],
+                [70.00510562247304, 30.00510572133135],
+                [70.00765837886604, 30.00765951987357]
+            ]);
         }
     },
 
