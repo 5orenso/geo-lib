@@ -30,10 +30,11 @@ let result = geoLib.distance({
     p1: { lat: 70.3369224, lon: 30.3411273 },
     p2: { lat: 59.8939528, lon: 10.6450348 }
 });
-// result = {
-//   distance: 1468.28,
+// {
+//   distance: 1468.2753298955777,
 //   unit: 'km',
-//   method: 'haversine'
+//   method: 'haversine',
+//   bearing: 218.03212341269622
 // }
 ```
 
@@ -44,10 +45,11 @@ let result = geoLib.distance([
     [70.3369224, 30.3411273],
     [59.8939528, 10.6450348]
 ]);
-// result = {
-//   distance: 1468.28,
+// {
+//   distance: 1468.2753298955777,
 //   unit: 'km',
-//   method: 'haversine'
+//   method: 'haversine',
+//   bearing: 218.03212341269622
 // }
 ```
 
@@ -59,16 +61,60 @@ let result = geoLib.distance({
     p2: { lat: 59.8939528, lon: 10.6450348 },
     timeUsed: 86400 * 5
 });
-// result = {
-//   distance: 1468.28,
+// {
+//   distance: 1468.2753298955777,
+//   unit: 'km',
 //   method: 'haversine',
-//   speedKph: 12.24,
-//   speedMph: 7.61,
-//   speedMpk: '4:54',
+//   bearing: 218.03212341269622,
 //   timeUsedInSeconds: 432000,
-//   unit: 'km'
+//   speedKph: 12.235627749129813,
+//   speedMph: 7.602864250104541,
+//   speedMpk: '4:54.22274637735927'
 // }
 ```
+
+Create new point in distance and bearing from a given point:
+```javascript
+let geoLib = require('geo-lib');
+const result = geoLib.createCoord([70.000, 30.000], 360, 10000);
+console.log(result);
+// [ 70.08993216059186, 29.999999999999964 ]
+```
+
+Create new points between 2 given points:
+```javascript
+let geoLib = require('geo-lib');
+const result = geoLib.generatePoints([70.000, 30.000], [70.010, 30.010]);
+
+console.log(result);
+// [
+//   [ 70.00085094723158, 30.000850779931362 ],
+//   [ 70.00170189040277, 30.001701629300936 ],
+//   [ 70.002552829513, 30.00255254811713 ],
+//   [ 70.00340376456182, 30.0034035363886 ],
+//   [ 70.00425469554865, 30.004254594123793 ],
+//   [ 70.00510562247304, 30.00510572133135 ],
+//   [ 70.00595654533441, 30.005956918019837 ],
+//   [ 70.00680746413225, 30.006808184197695 ],
+//   [ 70.00765837886604, 30.00765951987357 ],
+//   [ 70.00850928953531, 30.00851092505601 ],
+//   [ 70.00936019613945, 30.009362399753574 ]
+// ]
+```
+
+Create new points between 2 given points with fixed distance:
+```javascript
+let geoLib = require('geo-lib');
+const result = geoLib.generatePoints([70.000, 30.000], [70.010, 30.010], 300);
+
+console.log(result);
+// [
+//   [ 70.002552829513, 30.00255254811713 ],
+//   [ 70.00510562247304, 30.00510572133135 ],
+//   [ 70.00765837886604, 30.00765951987357 ]
+// ]
+```
+
 
 To check if a point is inside a polygon:
 ```javascript
@@ -88,17 +134,7 @@ let result = geoLib.pointInsidePolygon([70.374164, 31.117401], [
     [70.405506, 31.062469],
     [70.403663, 31.056976]
 ]);
-// result = true                               
-```
-
-To check if 2 lines intersects:
-```javascript
-let geoLib = require('geo-lib');
-let result = geoLib.linesIntersect(
-    {lat: 59.75639, lon: 6.67968}, {lat: 61.15383, lon: 11.87622},
-    {lat: 61.51745, lon: 8.15185}, {lat: 59.75086, lon: 11.1621}
-);
-// result = true                               
+// true
 ```
 
 To check if 2 polygons overlaps:
@@ -113,9 +149,18 @@ let result = geoLib.polygonOverlapsPolygon([
         59.02924, 10.51391,
         59.0688, 12.63427
     ]);
-// result = true                               
+// true
 ```
 
+To check if 2 lines intersects:
+```javascript
+let geoLib = require('geo-lib');
+let result = geoLib.linesIntersect(
+    {lat: 59.75639, lon: 6.67968}, {lat: 61.15383, lon: 11.87622},
+    {lat: 61.51745, lon: 8.15185}, {lat: 59.75086, lon: 11.1621}
+);
+// true
+```
 
 ----------
 
@@ -157,10 +202,10 @@ $ bash ./changelog.sh
 ### Howto check for vulnerabilities in modules
 ```bash
 # Install Node Security Platform CLI
-$ npm install nsp --global  
+$ npm install nsp --global
 
 # From inside your project directory
-$ nsp check  
+$ nsp check
 ```
 
 ### Howto upgrade modules
